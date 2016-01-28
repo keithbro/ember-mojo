@@ -1,0 +1,9 @@
+<h3>Speakers</h3>
+
+{{#each model as |speaker|}}
+  {{#link-to "speaker" speaker}}
+    {{speaker.name}} ({{speaker.presentations.length}})
+  {{/link-to}}
+{{/each}}
+
+{{outlet}}
